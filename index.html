@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<!-- Alyssa Birt
+		6/10/2019
+	    Version 1.0 -->
+  <meta charset="UTF-8">
+  <title>Final Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<a href="pages/secondPage.html" target="_blank"> Before Interface Page</a>
+
+<body>
+<!-- partial:index.partial.html -->
+<div id="title-box">
+  <h2>Google Gender Selection</h2>
+</div>
+
+<div id="GenButtons">
+  <label for="femaleGender">
+    <input type="radio" id="femaleGender" name="chk" onclick="IsFemale()"/>
+    Female
+   </label>
+  <label for="maleGender">
+    <input type="radio" id="maleGender" name="chk" onclick="IsMale()"/>
+    Male
+  </label>
+  <label for="otherGender">
+    <input type="radio" id="otherGender" name="chk" onclick="IsOther()"/>
+    Rather not say
+  </label>
+  <label for="customGender">
+    <input type="radio" id="customGender" name="chk" onclick="ShowHideDiv()"/>
+    Custom
+  </label>
+</div>
+
+<div id="customGenTxt" style="display: none">
+  What's your gender?
+  <input type="text" id="txtBox" onkeydown="IsCustom(this)"/>
+</div>
+
+<div id="referral" style="display: none">
+  Please refer to me as:
+  <label for="referFemale">
+    <input type="radio" id="referFemale" name="chk"/>
+    Female
+  </label>
+  <label for="referMale">
+    <input type="radio" id="referMale" name="chk"/>
+    Male
+  </label>
+  <label for="referOther">
+    <input type="radio" id="referOther" name="chk"/>
+    Other
+  </label>
+</div>
+
+<section id="content"></section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/6.1.0/jsoneditor.min.js'></script>
+<script  src="javascript/script.js"></script>
+
+</body>
+</html>

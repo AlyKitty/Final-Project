@@ -1,0 +1,17 @@
+#title-box {
+  position: relative;
+  left: 1%;
+  font-family: "Arial", cursive;
+}
+
+input[type="radio"] {
+  margin-left: 20px;
+}
+
+#customGenTxt {
+  margin-left: 20px;
+}
+
+#referral {
+  margin-left: 20px;
+}
